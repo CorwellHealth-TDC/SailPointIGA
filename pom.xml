@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
-    <groupId>com.sailpoint</groupId>
-    <artifactId>sail-point-improved-parent</artifactId>
-    <version>0.2.3</version>
-    <modelVersion>4.0.0</modelVersion>
-    <packaging>pom</packaging>
-
-    <modules>
-        <module>sail-point-annotation-parent</module>
-        <module>sail-point-improved</module>
-        <module>sail-point-customization</module>
-    </modules>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">  
 
     <properties>
 
@@ -40,28 +28,6 @@
         <log4j.version>1.2.17</log4j.version>
 
     </properties>
-    <dependencyManagement>
-        <dependencies>
-            <!-- Improved annotations -->
-            <dependency>
-                <groupId>com.sailpoint</groupId>
-                <artifactId>sail-point-annotation</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <!-- Improved annotation processor -->
-            <dependency>
-                <groupId>com.sailpoint</groupId>
-                <artifactId>sail-point-annotation-processor</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <!-- Improved -->
-            <dependency>
-                <groupId>com.sailpoint</groupId>
-                <artifactId>sail-point-improved</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
 
     <dependencies>
         <!-- Slf4j -->
