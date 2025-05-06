@@ -52,17 +52,6 @@
         <mockito.version>2.27.0</mockito.version>
         <spring.test.version>4.3.23.RELEASE</spring.test.version> -->
     </properties>
-
-    <!-- Additional repositories 
-    <repositories>
-        <!--Repository for sap  -->
-        <repository>
-            <id>mit</id>
-            <name>maven_mit</name>
-            <url>http://maven.mit.edu/nexus/content/repositories/public/</url>
-        </repository>
-    </repositories> -->
-
     <dependencyManagement>
         <dependencies>
             <!-- Improved annotations -->
