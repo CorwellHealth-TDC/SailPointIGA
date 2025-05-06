@@ -1,0 +1,29 @@
+name: Deploy to Tomcat
+on:
+  push:
+    branches:
+      - master  # or your target branch 
+jobs:
+  build-and-deploy:
+    runs-on: Red Hat Enterprise Linux 8.3 
+    steps:
+    - name: Checkout code
+      uses: actions/git@github.com:CorwellHealth-TDC/SailPointIGA.git
+    - name: Set up Java
+      uses: actions/setup-java@openjdk 11.0.2
+      with:
+        distribution: 'temurin'
+        java-version: '11'  # or your required version
+    - name: Build with Maven
+      run: mvn clean package
+    - name: Deploy to Tomcat via SCP
+      uses: appleboy/scp-action@v0.1.4
+      with:
+        host: 172.16.30.104
+        username: cotelligent
+        key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCxRZZqBfuCSCFxlfoYVjbxcmu4OmBOBG1mKtBVyjHPl0SVv3s/ca2TJg8H5Q7VSy2IFk+g6pz0bysPjlAUzc83PBbe9T1WdoOadCw3C3/t9+LzMpkVfIcoSS45ikAIjgrjHFMf4cq7rhwseXTaFseka2eInUFvZrYr4oGWniFoM/TF9FhKJT5CSD9sGE+44VVPKmElKLm6LS40sX3QisttcMa3j2jOK9Kp/a1OC4ZwuQjQbutfqwxQDkgTkqPcQs10FEPs5LbNV08mAjHvTOXEEzgbmcDxSWdMrRTnv7X9XO9IvpjRoxSPPPKWgvaR6e8bp6is9BnBcV7ITK4pfm/5KME/c8qMSMxmsiGo+vibtRpPMghISDpD1RNRzAEdiX1JnbSftY799XoGicSmdLGs0n1zjwD8wI+NtrrnpGahQUtBH3/Nz5TiegxW+Ouxej+bvHR6Fx9wJduIA6m8/1CaESJfb4aQePHiXjji4MR5vVSIuvvilt8OCQS+bsPDd10= cotelligent@localhost.localdomain
+        port: 22
+        source: "/opt/prakash/code_deployment/idenitityiq.war"
+
+        target: "/app/apache-tomcat/webapps/"
+ 
