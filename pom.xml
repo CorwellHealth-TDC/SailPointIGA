@@ -55,7 +55,7 @@
 
     <!-- Additional repositories 
     <repositories>
-        <!--Repository for sap 
+        <!--Repository for sap  -->
         <repository>
             <id>mit</id>
             <name>maven_mit</name>
