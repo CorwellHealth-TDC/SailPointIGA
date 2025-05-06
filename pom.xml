@@ -126,14 +126,7 @@
             <version>${google.process.test.version}</version>
             <scope>test</scope>
         </dependency> -->
-
-        <!--Jmockit 
-        <dependency>
-            <groupId>org.jmockit</groupId>
-            <artifactId>jmockit</artifactId>
-            <version>${jmockit.version}</version>
-            <scope>test</scope>
-        </dependency>
+             
         <!-- Spring test -->
         <dependency>
             <groupId>org.springframework</groupId>
@@ -181,20 +174,8 @@
             <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
             <version>${commons.logging.version}</version>
-        </dependency>
-
-        <!-- Google (clone mozilla) universalchardet 
-        <dependency>
-            <groupId>com.googlecode.juniversalchardet</groupId>
-            <artifactId>juniversalchardet</artifactId>
-            <version>${juniversalchardet.version}</version>
-        </dependency> -->
-        <!-- Lucene 
-        <dependency>
-            <groupId>org.apache.lucene</groupId>
-            <artifactId>lucene-core</artifactId>
-            <version>${lucene.core.version}</version>
-        </dependency> -->
+        </dependency>    
+       
         <!-- Json -->
         <dependency>
             <groupId>org.json</groupId>
