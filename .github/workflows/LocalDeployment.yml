@@ -2,7 +2,7 @@ name: Deploy to Tomcat
 on:
   push:
     branches:
-      - master  # or your target branch 
+      - master  # or your target branch is master
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest 
