@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest 
     steps:
     - name: Checkout code
-      uses: actions/git@github.com:CorwellHealth-TDC/SailPointIGA.git
+      uses: actions/checkout@v3
     - name: Set up Java
       uses: actions/setup-java@v3
       with:
