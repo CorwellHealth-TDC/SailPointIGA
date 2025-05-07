@@ -20,7 +20,7 @@
         <maven.surefire.plugin.version>2.22.1</maven.surefire.plugin.version>
 
         <!-- IdentityIQ dependencies -->
-	<!-- <identityiq.version>8.4.p2</identityiq.version> -->
+	<identityiq.version>8.4.p2</identityiq.version>
         <aspectjrt.version>1.9.6</aspectjrt.version>
         <commons.io.version>2.11.0</commons.io.version>
         <commons.pool.version>2.11.1</commons.pool.version>
