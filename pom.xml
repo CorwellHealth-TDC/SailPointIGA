@@ -79,17 +79,17 @@
 
         <!-- IdentityIQ dependencies -->
         <!-- IdentityIq 7.3 -->
-        <dependency>
-            <groupId>com.sailpoint</groupId>
+       <!-- <dependency>  
+        <!--    <groupId>com.sailpoint</groupId> -->
           <!--  <artifactId>identityiq</artifactId> -->
          <!--   <version>${identityiq.version}</version> -->
-        </dependency>
+        <!-- </dependency> -->
         <!-- IdentityIq 7.3 connector bundle -->
-        <dependency>
-            <groupId>com.sailpoint</groupId>
-            <artifactId>connector-bundle</artifactId>
+        <!-- <dependency> -->
+           <!--  <groupId>com.sailpoint</groupId> -->
+           <!--  <artifactId>connector-bundle</artifactId> -->
           <!--  <version>${identityiq.version}</version> -->
-        </dependency>
+        <!-- </dependency> -->
 
         <!-- AspectJ -->
         <dependency>
