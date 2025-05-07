@@ -133,9 +133,6 @@
             <version>${jasperreports.version}</version>
         </dependency>
     </dependencies>
-- name: Install Dependencies
-  run: mvn install
-
     <build>
         <plugins>
             <!-- Enable JMock for mocking static methods -->
