@@ -23,7 +23,7 @@
 	<!--  <identityiq.version>8.4.p2</identityiq.version> -->
         <aspectjrt.version>1.9.6</aspectjrt.version>
         <commons.io.version>2.11.0</commons.io.version>
-        <commons.pool.version>2.11.1</commons.pool.version>
+        <!--  <commons.pool.version>2.11.1</commons.pool.version> -->
         <commons.logging.version>1.2</commons.logging.version>
         <juniversalchardet.version>1.0.3</juniversalchardet.version>
         <jasperreports.version>6.19.1</jasperreports.version>
@@ -36,13 +36,7 @@
 
     </properties>
 	
-    <dependencies>
-	<dependency>
-        <groupId>com.example</groupId>
-        <artifactId>my-dependency</artifactId>
-        <version>1.2.3</version>
-    	</dependency>
-	    
+    <dependencies>	    
         <!-- Slf4j -->
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -87,11 +81,7 @@
         </dependency>
 
         <!-- Commons pool for compile -->
-        <dependency>
-            <groupId>commons-pool</groupId>
-            <artifactId>commons-pool</artifactId>
-            <version>${commons.pool.version}</version>
-        </dependency>
+        
         <!-- Commons logging -->
         <dependency>
             <groupId>commons-logging</groupId>
