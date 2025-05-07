@@ -19,7 +19,7 @@
         <maven.versions.plugin>2.7</maven.versions.plugin>
         <maven.surefire.plugin.version>2.22.1</maven.surefire.plugin.version>
 
-        <!-- IdentityIQ dependencies -->
+        <!-- IdentityIQ dependencies 
         <identityiq.version>8.4.p2</identityiq.version>
         <aspectjrt.version>1.9.6</aspectjrt.version>
         <commons.io.version>2.11.0</commons.io.version>
@@ -27,7 +27,7 @@
         <commons.logging.version>1.2</commons.logging.version>
         <juniversalchardet.version>1.0.3</juniversalchardet.version>
         <jasperreports.version>6.19.1</jasperreports.version>
-        <json.version>20180813</json.version>
+        <json.version>20180813</json.version> -->
 
         <!-- slf4j api version -->
         <slf4j.api.version>1.7.32</slf4j.api.version>
