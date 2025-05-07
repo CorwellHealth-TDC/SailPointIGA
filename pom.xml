@@ -96,7 +96,7 @@
     <artifactId>identityiq</artifactId>
     <version>8.4</version>
     <scope>system</scope>
-    <systemPath>${project.basedir}/libs/identityiq.jar</systemPath>
+    <systemPath>https://github.com/CorwellHealth-TDC/SailPointIGA/tree/b0ad58bf7ba9b2737341fed4a1f44e939491e176/lib/identityiq.jar</systemPath>
 </dependency>
         <!-- AspectJ -->
         <dependency>
