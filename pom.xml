@@ -12,6 +12,14 @@
 	<description>Demo project</description>
     <properties>
 
+	    <repositories>
+        <repository>
+            <id>data-local</id>
+            <name>SailPointIGA</name>
+            <url>file:/SailPointIGA/lib</url>
+        </repository>
+    	</repositories>
+
         <!-- JAVA version compiler -->
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
