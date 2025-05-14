@@ -44,17 +44,6 @@
     </repository>
 	</repositories>
 
-	<plugins>
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-war-plugin</artifactId>
-            <version>2.4</version>
-            <configuration>
-                <failOnMissingWebXml>false</failOnMissingWebXml>
-            </configuration>
-        </plugin>
-	</plugins>
-
     <dependencies>	    
         <!-- Slf4j -->
         <dependency>
@@ -141,6 +130,14 @@
                 <artifactId>versions-maven-plugin</artifactId>
                 <version>${maven.versions.plugin}</version>
             </plugin>
+		<plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>2.4</version>
+            <configuration>
+                <failOnMissingWebXml>false</failOnMissingWebXml>
+            </configuration>
+        </plugin>
         </plugins>
     </build>
 </project>
